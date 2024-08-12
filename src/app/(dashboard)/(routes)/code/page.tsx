@@ -18,6 +18,8 @@ import { ChatHistory } from "@/lib/types";
 import Loader from "@/components/loader";
 import { ModelAvatar, UserAvatar } from "@/components/avatar";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+("react-syntax-highlighter");
+("react-syntax-highlighter");
 import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useProModal } from "@/hooks/use-pro-modal";
 import { toast } from "sonner";
