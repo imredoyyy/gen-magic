@@ -20,7 +20,7 @@ import { ModelAvatar, UserAvatar } from "@/components/avatar";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 ("react-syntax-highlighter");
 ("react-syntax-highlighter");
-import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useProModal } from "@/hooks/use-pro-modal";
 import { toast } from "sonner";
 
@@ -144,16 +144,16 @@ const CodePage = () => {
 
                         return match ? (
                           <SyntaxHighlighter
-                            {...rest}
                             PreTag="div"
                             language={match[1]}
-                            style={coy}
+                            showLineNumbers
+                            style={atomDark}
                             className="rounded-lg border border-black/15 shadow-sm"
                           >
                             {String(children).replace(/\n$/, "")}
                           </SyntaxHighlighter>
                         ) : (
-                          <code {...rest} className="prose">
+                          <code {...rest} className="prose dark:prose-invert">
                             {children}
                           </code>
                         );
