@@ -130,8 +130,10 @@ const CodePage = () => {
               <div
                 key={chat.parts}
                 className={cn(
-                  "flex w-full items-start gap-x-8 rounded-lg border border-black/10 p-8 text-sm",
-                  chat.role === "user" ? "bg-zinc-100" : "bg-muted",
+                  "flex w-full items-start gap-x-8 rounded-lg p-8",
+                  chat.role === "user"
+                    ? "bg-muted-foreground/25 text-right"
+                    : "bg-muted",
                 )}
               >
                 {chat.role === "user" ? <UserAvatar /> : <ModelAvatar />}

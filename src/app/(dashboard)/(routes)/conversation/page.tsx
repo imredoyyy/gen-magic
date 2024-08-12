@@ -114,7 +114,7 @@ const ConversationPage = () => {
         </div>
         <div className="mt-4 space-y-4">
           {isLoading && (
-            <div className="flex w-full items-center justify-center rounded-lg bg-muted p-8">
+            <div className="flex w-full items-center justify-center rounded-lg bg-muted/50 p-8">
               <Loader label="Generating..." />
             </div>
           )}
